@@ -1,0 +1,66 @@
+\documentclass[11pt]{report}
+\usepackage[margin=0.59in]{geometry}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usepackage{hyperref}
+
+\definecolor{gray}{RGB}{112, 128, 144}
+
+\begin{document}
+\begin{titlepage}
+
+\begin{large}
+
+\begin{tikzpicture}[remember picture,overlay]
+    \draw[line width=4pt, color=gray]
+        ($(current page.north west) + (0.30in,-0.30in)$) rectangle
+        ($(current page.south east) + (-0.30in,0.30in)$);
+\end{tikzpicture}
+
+\raggedright \textbf{Maxim Zubakha, 18 y. o.} \\ Moscow Institute of Physics and Technology \\ System Programming and Applied Mathematics \\ Dolgoprudny, Russia \\ \href{zubakha.ma@phystech.edu}{\textit{zubakha.ma@phystech.edu}} \\ +7 (927) 364-44-25 \\
+
+\vspace{0.7em}
+
+\raggedright Dear hiring team, \\
+
+\vspace{0.7em}
+
+As a first-year MIPT student in System Programming and Applied Mathematics, I’m eager to apply my skills to real-world challenges. My passion for system programming stems from a deep interest in how operating systems work, which is why I’m drawn to the Huawei Russian Research Institute’s Base Software Lab. Your work on optimizing the Linux kernel—particularly the memory-efficient RCU-safe B+ tree, presented by Artem Kuzin [1]—showcases the kind of innovation I want to be part of. Designing data structures that balance memory efficiency and concurrency closely aligns with my interest in practical algorithmic solutions.
+
+\vspace{0.7em}
+
+I’m fascinated by your work on the Maple Tree in the Linux kernel, which manages Virtual Memory Areas (VMAs) while addressing complex trade-offs. RCU-safe data structures improve read performance, especially in speculative page faults, but face challenges with memory allocation overhead during insertions and deletions, such as mmap() and munmap(). Since write performance can be just as critical, your focus on a memory-efficient RCU-safe B+ tree strongly resonates with me. It reflects the kind of real-world optimization challenges I’m eager to tackle.
+
+\vspace{0.7em}
+
+In my projects, I’ve explored optimization challenges such as accelerating Mandelbrot set rendering by implementing multithreading to parallelize computations, which significantly reduced rendering time. This experience introduced me to the complexities of parallel programming and deepened my interest in multithreading technologies. I’m especially excited to explore their application to building concurrent data structures, where efficient synchronization is essential for both performance and correctness.
+
+\vspace{0.7em}
+
+The opportunity to contribute to the Base Software Lab’s real-world projects—such as integrating optimizations into the Linux kernel—is incredibly motivating. Although I am early in my academic journey, my education and self-study have provided me with a strong foundation in data structures and algorithms, and I’m excited to build on this through hands-on experience in operating system development.
+
+\vspace{0.7em}
+
+With a strong command of English for technical communication and a demonstrated ability to learn quickly, I am enthusiastic about the possibility of joining your team. My passion for system programming and my analytical mindset make me a motivated candidate for this traineeship.
+
+\vspace{0.7em}
+
+Thank you for considering my application—I look forward to the opportunity to contribute to Huawei’s Base Software Lab and grow alongside your talented team.
+
+\vspace{0.7em}
+
+\raggedright Sincerely,\\
+\textbf{Maxim Zubakha}
+
+\vspace{1.0em}
+
+\textbf{References:} \\
+\vspace{0.2em}
+
+[1] Ivanov, V., \& Kuzin, A. (2025). Memory Efficient RCU B+ Tree: Presentation at the SysConf Pro Conference [Electronic resource]. Retrieved from: \href{https://sysconf.pro/talks/a9e94fe7e2224fc1a6cfa010df1d3c91/}{https://sysconf.pro/talks/a9e94fe7e2224fc1a6cfa010df1d3c91/} (Accessed: March 07, 2025). Presentation PDF: \href{https://squidex.jugru.team/api/assets/srm/19a3f868-f191-4931-b3d2-bde8d7ccb0a4/b-sysconf-2025-21.03.2025.pdf}{https://squidex.jugru.team/api/assets/srm/19a3f868-f191-4931-b3d2-bde8d7ccb0a4/b-sysconf-2025-21.03.2025.pdf} (Accessed: March 07, 2025).
+
+\end{large}
+
+\end{titlepage}
+\end{document}
