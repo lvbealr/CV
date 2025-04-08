@@ -1,0 +1,65 @@
+\documentclass[11pt]{report}
+\usepackage[margin=0.59in]{geometry}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usepackage{hyperref}
+
+\definecolor{gray}{RGB}{112, 128, 144}
+
+\begin{document}
+\begin{titlepage}
+
+\begin{large}
+
+\begin{tikzpicture}[remember picture,overlay]
+    \draw[line width=4pt, color=gray]
+        ($(current page.north west) + (0.30in,-0.30in)$) rectangle
+        ($(current page.south east) + (-0.30in,0.30in)$);
+\end{tikzpicture}
+
+\raggedright \textbf{Maxim Zubakha, 18 y. o.} \\ Moscow Institute of Physics and Technology \\ System Programming and Applied Mathematics \\ Dolgoprudny, Russia \\ \href{zubakha.ma@phystech.edu}{\textit{zubakha.ma@phystech.edu}} \\ +7 (927) 364-44-25 \\
+
+\vspace{0.7em}
+
+\raggedright Dear hiring team, \\
+
+\vspace{0.7em}
+
+I am writing to express my deep interest in the traineeship program at Huawei Lomonosov Research Institute. As a first-year student at MIPT majoring in System Programming and Applied Mathematics, I am eager to contribute to your Processor Optimization Lab and develop my skills in this dynamic field.
+
+\vspace{0.7em}
+
+My passion for system programming grew from a desire to explore the unknown and solve complex problems. Although my early education focused on languages, I independently studied technical sciences and enrolled in MIPT's correspondence school. Despite the challenges, I quickly adapted to the rigorous program, which reinforced my choice of major. System programming inspires me to continuously learn and innovate.
+
+\vspace{0.7em}
+
+One of my key projects involved accelerating the rendering of the Mandelbrot set. I experimented with SIMD, GLSL shaders, and multithreading, conducting in-depth performance analysis using objdump and perf. I was particularly fascinated by low-level optimizations, where small code changes led to significant performance gains. This project developed my love for analytical work and optimization, with object file analysis and perf data serving as the foundation for improvements.
+
+\vspace{0.7em}
+
+My interest in system programming and optimization was further solidified after reading the abstract of a dissertation [1] written by \textit{S. A. Lisitsyn}, a leading engineer at Huawei LRI. In his work, Lisitsyn investigates how execution traces—detailed records of a program’s instruction sequences—can be leveraged to collect profiling information that enhances static binary optimization. This approach deeply resonates with my own experience optimizing the Mandelbrot set rendering, where I used tools like perf to pinpoint performance bottlenecks, such as instruction cache misses and branch mispredictions. These insights enabled me to make precise code adjustments that significantly boosted efficiency. Furthermore, his exploration of static binary translation—a process that optimizes code prior to execution—fascinates me, as it aligns with my interest in low-level programming and compiler techniques. His methodology not only validates my observations but also introduces sophisticated strategies that I am eager to study and apply. The prospect of working on similar optimization challenges at Huawei’s Processor Optimization Lab, where such pioneering research is conducted, excites me and reinforces my belief that I can contribute meaningfully to your team.
+
+\vspace{0.7em}
+
+With a confident command of English for technical documentation and a proven ability to learn quickly, I am enthusiastic about applying my skills and passion for optimization at Huawei.
+
+\vspace{0.7em}
+
+Thank you for considering my application—I hope to become part of your innovative projects.
+
+\vspace{0.7em}
+
+\raggedright Sincerely,\\
+\textbf{Maxim Zubakha}
+
+\vspace{2.0em}
+
+\textbf{References:} \\
+\vspace{0.2em}
+[1] Lisitsyn S. A. Profiling Information Collection Using Application Execution Traces for Static Optimizing Binary Translation: diss. PhD in Technology: 05.13.11. - M., 2022. - 21 p.
+
+\end{large}
+
+\end{titlepage}
+\end{document}
